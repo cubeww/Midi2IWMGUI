@@ -1,0 +1,12 @@
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\bin\Debug\Midi2IWMGUI.exe.config
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\bin\Debug\Midi2IWMGUI.exe
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\bin\Debug\Midi2IWMGUI.pdb
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\obj\Debug\Midi2IWMGUI.csprojAssemblyReference.cache
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\obj\Debug\Midi2IWMGUI.Form1.resources
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\obj\Debug\Midi2IWMGUI.Properties.Resources.resources
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\obj\Debug\Midi2IWMGUI.csproj.GenerateResource.cache
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\obj\Debug\Midi2IWMGUI.exe
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\obj\Debug\Midi2IWMGUI.pdb
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\bin\Debug\NAudio.dll
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\bin\Debug\NAudio.xml
+D:\CSharp\Midi2IWMGUI\Midi2IWMGUI\obj\Debug\Midi2IWMGUI.csproj.CopyComplete

@@ -110,7 +110,8 @@ namespace Midi2IWMGUI
                         ac = ev.CreateTag(xml, "event", "eventIndex", "104");
 
                         var note = (NoteOnEvent)i;
-                        var pitch = pitchTable[note.NoteNumber + pitchFix];
+                        var pitchIndex = note.NoteNumber + pitchFix < 0 ? 0 : note.NoteNumber + pitchFix;
+                        var pitch = pitchTable[pitchIndex];
                         ac.CreateTag(xml, "param", "key", "pitch", "val", pitch.ToString());
                         var sfx = (string)config["sfx"];
                         ac.CreateTag(xml, "param", "key", "sound", "val", GetSFXIndex(sfx));

@@ -1,4 +1,4 @@
-﻿using NAudio.Midi;
+using NAudio.Midi;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,6 +12,7 @@ using static System.Math;
 using static Midi2IWMGUI.XmlHelper;
 using System.Xml;
 using System.IO;
+using System.Globalization;
 
 namespace Midi2IWMGUI
 {
@@ -107,16 +108,29 @@ namespace Midi2IWMGUI
                         // Event: Timer
                         ev = obj.CreateTag(xml, "event", "eventIndex", "2");
                         ev.CreateTag(xml, "param", "key", "timer_number", "val", "0");
+                        ac = ev.CreateTag(xml, "event", "eventIndex", "103");
                         ac = ev.CreateTag(xml, "event", "eventIndex", "104");
 
                         var note = (NoteOnEvent)i;
                         var pitchIndex = note.NoteNumber + pitchFix < 0 ? 0 : note.NoteNumber + pitchFix;
                         var pitch = pitchTable[pitchIndex];
-                        ac.CreateTag(xml, "param", "key", "pitch", "val", pitch.ToString());
+                        var pitchM = String.Format(CultureInfo.InvariantCulture, "{0,0:F}", pitch);
+                        var pitchA = 0.00;
+                        System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+                        pitchA = Double.Parse(pitchM);
+                        if (pitchA >= 0.05)
+                        {
+                            ac.CreateTag(xml, "param", "key", "pitch", "val", pitchM.ToString());
+                        }
+                        else
+                        {
+                            ac.CreateTag(xml, "param", "key", "pitch", "val", "0.05");
+                        }
+                       // ac.CreateTag(xml, "param", "key", "pitch", "val", pitchM.ToString());
                         var sfx = (string)config["sfx"];
                         ac.CreateTag(xml, "param", "key", "sound", "val", GetSFXIndex(sfx));
 
-                        ac.CreateTag(xml, "event", "eventIndex", "103");
+                       ac.CreateTag(xml, "event", "eventIndex", "103");
 
                         // Trigger
                         obj.CreateTag(xml, "param", "key", "trigger_once", "val", "1");
@@ -293,6 +307,9 @@ namespace Midi2IWMGUI
                 case "Ninja": return "15";
                 case "Hand": return "16";
                 case "Drum": return "17";
+                case "Piano": return "18";
+                case "Bas-guitar": return "19";
+                case "Kazoo": return "20";
                 default: return "0";
             }
         }

@@ -1,4 +1,4 @@
-﻿namespace Midi2IWMGUI
+namespace Midi2IWMGUI
 {
     partial class Form1
     {
@@ -60,7 +60,7 @@
             this.label1.Location = new System.Drawing.Point(2, 8);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 17);
+            this.label1.Size = new System.Drawing.Size(57, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Midi File";
             // 
@@ -138,7 +138,7 @@
             this.LblNoteCount.Location = new System.Drawing.Point(186, 26);
             this.LblNoteCount.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblNoteCount.Name = "LblNoteCount";
-            this.LblNoteCount.Size = new System.Drawing.Size(15, 17);
+            this.LblNoteCount.Size = new System.Drawing.Size(15, 20);
             this.LblNoteCount.TabIndex = 9;
             this.LblNoteCount.Text = "0";
             // 
@@ -149,7 +149,7 @@
             this.label4.Location = new System.Drawing.Point(104, 26);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 17);
+            this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Note Count:";
             // 
@@ -175,7 +175,7 @@
             this.label3.Location = new System.Drawing.Point(233, 57);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 17);
+            this.label3.Size = new System.Drawing.Size(29, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "SFX";
             // 
@@ -200,7 +200,10 @@
             "Button",
             "Ninja",
             "Hand",
-            "Drum"});
+            "Drum",
+            "Piano",
+            "Bas-Guitar",
+            "Kazoo"});
             this.CboSFX.Location = new System.Drawing.Point(264, 54);
             this.CboSFX.Margin = new System.Windows.Forms.Padding(2);
             this.CboSFX.Name = "CboSFX";
@@ -213,7 +216,7 @@
             // 
             this.LstTracks.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.LstTracks.FormattingEnabled = true;
-            this.LstTracks.ItemHeight = 17;
+            this.LstTracks.ItemHeight = 20; // IMPORTANT
             this.LstTracks.Location = new System.Drawing.Point(3, 26);
             this.LstTracks.Margin = new System.Windows.Forms.Padding(2);
             this.LstTracks.Name = "LstTracks";
@@ -228,7 +231,7 @@
             this.label2.Location = new System.Drawing.Point(2, 7);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.Size = new System.Drawing.Size(46, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "Tracks";
             // 
@@ -243,7 +246,7 @@
             this.label5.Location = new System.Drawing.Point(104, 54);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 17);
+            this.label5.Size = new System.Drawing.Size(86, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "Highest Pitch:";
             // 
@@ -254,7 +257,7 @@
             this.LblHighestPitch.Location = new System.Drawing.Point(186, 54);
             this.LblHighestPitch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblHighestPitch.Name = "LblHighestPitch";
-            this.LblHighestPitch.Size = new System.Drawing.Size(15, 17);
+            this.LblHighestPitch.Size = new System.Drawing.Size(15, 20);
             this.LblHighestPitch.TabIndex = 11;
             this.LblHighestPitch.Text = "0";
             // 
@@ -265,7 +268,7 @@
             this.LblLengthInFrames.Location = new System.Drawing.Point(213, 108);
             this.LblLengthInFrames.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLengthInFrames.Name = "LblLengthInFrames";
-            this.LblLengthInFrames.Size = new System.Drawing.Size(15, 17);
+            this.LblLengthInFrames.Size = new System.Drawing.Size(15, 20);
             this.LblLengthInFrames.TabIndex = 13;
             this.LblLengthInFrames.Text = "0";
             // 
@@ -276,7 +279,7 @@
             this.label7.Location = new System.Drawing.Point(104, 108);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 17);
+            this.label7.Size = new System.Drawing.Size(111, 20);
             this.label7.TabIndex = 12;
             this.label7.Text = "Length In Frames:";
             // 
@@ -287,7 +290,7 @@
             this.LblLowestPitch.Location = new System.Drawing.Point(186, 81);
             this.LblLowestPitch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLowestPitch.Name = "LblLowestPitch";
-            this.LblLowestPitch.Size = new System.Drawing.Size(15, 17);
+            this.LblLowestPitch.Size = new System.Drawing.Size(15, 8);
             this.LblLowestPitch.TabIndex = 17;
             this.LblLowestPitch.Text = "0";
             // 
@@ -298,7 +301,7 @@
             this.label10.Location = new System.Drawing.Point(104, 81);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 17);
+            this.label10.Size = new System.Drawing.Size(82, 20);
             this.label10.TabIndex = 16;
             this.label10.Text = "Lowest Pitch:";
             // 
